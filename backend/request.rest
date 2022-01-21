@@ -1,0 +1,21 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJGYWphciIsImVtYWlsIjoiYWRtaW5AamFyeHIueHl6IiwiaWF0IjoxNjQyNDE2NTI2LCJleHAiOjE2NDI0MTc3MjZ9.ahEWwDyAVVGm9OZ1pXYLzojAgMYagqsG5aYxs5CmE0I
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Fajar",
+    "email": "admin@jarxr.xyz",
+    "password": "12345",
+    "confPassword": "12345"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@jarxr.xyz",
+    "password": "12345"
+}
